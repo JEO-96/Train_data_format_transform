@@ -2,6 +2,16 @@
 LISA에서 다운받은 traffic light 데이터셋을 YOLO에서 사용하는 포멧으로 변환하는 파일
 """
 
+import os
+
+
+def check_directory():
+    try:
+        if not os.path.exists(r'./labels'):
+            os.makedirs(r'./labels')
+    except OSError:
+        print('Error: Creating directory. ' + r'./labels')
+
 
 def GetFilePath(path):
     lablepath = r"{}".format(path)
@@ -10,6 +20,7 @@ def GetFilePath(path):
 
 def MakeEmptyFile(emptyFileName):
     fw = open("./labels/{}.txt".format(emptyFileName), 'w')
+    fw.close()
 
 
 def MakeFile(file_name, Annotation_tag, left, top, right, bottom, over_count):
@@ -18,45 +29,41 @@ def MakeFile(file_name, Annotation_tag, left, top, right, bottom, over_count):
     print(file_name)
     data = ""
     if over_count > 1:
-        fw = open("./labels/{}.txt".format(file_name), 'a')
+        fw = open(f"./labels/{file_name}.txt", 'a')
     else:
-        fw = open("./labels/{}.txt".format(file_name), 'w')
+        fw = open(f"./labels/{file_name}.txt", 'w')
 
     x = (int(left) + int(right)) / 2 / 1280
     y = (int(top) + int(bottom)) / 2 / 960
     w = (int(right) - int(left)) / 1280
     h = (int(bottom) - int(top)) / 960
 
-    if Annotation_tag == 'go':
+    if Annotation_tag == 'stop':
         ID = 0
         data += f"{ID} {x} {y} {w} {h}\n"
-    elif Annotation_tag == 'stop':
+    elif Annotation_tag == 'warning':
         ID = 1
         data += f"{ID} {x} {y} {w} {h}\n"
-    elif Annotation_tag == 'warning':
+    elif Annotation_tag == 'go':
         ID = 2
         data += f"{ID} {x} {y} {w} {h}\n"
     elif Annotation_tag == 'stopLeft':
-        ID = 1
-        data += f"{ID} {x} {y} {w} {h}\n"
-    elif Annotation_tag == 'goLeft':
-        ID = 0
+        ID = 3
         data += f"{ID} {x} {y} {w} {h}\n"
     elif Annotation_tag == 'warningLeft':
-        ID = 2
+        ID = 4
         data += f"{ID} {x} {y} {w} {h}\n"
-    elif Annotation_tag == 'goForward':
-        ID = 0
+    elif Annotation_tag == 'goLeft':
+        ID = 5
         data += f"{ID} {x} {y} {w} {h}\n"
+    # elif Annotation_tag == 'goForward':
+    #     ID = 0
+    #     data += f"{ID} {x} {y} {w} {h}\n"
     else:
         data += ""
 
-    if over_count > 1:
-        fw.write(data)
-        fw.close()
-    else:
-        fw.write(data)
-        fw.close()
+    fw.write(data)
+    fw.close()
 
 
 def TransForm(labels):
@@ -105,6 +112,7 @@ def TransForm(labels):
 
 
 if __name__ == '__main__':
+    check_directory()
     # DayTrainData
     TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip1/frameAnnotationsBOX.csv')
     TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip2/frameAnnotationsBOX.csv')
@@ -134,4 +142,3 @@ if __name__ == '__main__':
     # NightValData
     # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/nightSequence1/frameAnnotationsBOX.csv')
     # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/nightSequence2/frameAnnotationsBOX.csv')
-
