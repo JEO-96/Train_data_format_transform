@@ -37,30 +37,31 @@ def MakeFile(file_name, Annotation_tag, left, top, right, bottom, over_count):
     y = (int(top) + int(bottom)) / 2 / 960
     w = (int(right) - int(left)) / 1280
     h = (int(bottom) - int(top)) / 960
-
-    if Annotation_tag == 'stop':
-        ID = 0
-        data += f"{ID} {x} {y} {w} {h}\n"
-    elif Annotation_tag == 'warning':
-        ID = 1
-        data += f"{ID} {x} {y} {w} {h}\n"
-    elif Annotation_tag == 'go':
-        ID = 2
-        data += f"{ID} {x} {y} {w} {h}\n"
-    elif Annotation_tag == 'stopLeft':
-        ID = 3
-        data += f"{ID} {x} {y} {w} {h}\n"
-    elif Annotation_tag == 'warningLeft':
-        ID = 4
-        data += f"{ID} {x} {y} {w} {h}\n"
-    elif Annotation_tag == 'goLeft':
-        ID = 5
-        data += f"{ID} {x} {y} {w} {h}\n"
+    ID = 0
+    data += f"{ID} {x} {y} {w} {h}\n"
+    # if Annotation_tag == 'stop':
+    #     ID = 0
+    #     data += f"{ID} {x} {y} {w} {h}\n"
+    # elif Annotation_tag == 'warning':
+    #     ID = 1
+    #     data += f"{ID} {x} {y} {w} {h}\n"
+    # elif Annotation_tag == 'go':
+    #     ID = 2
+    #     data += f"{ID} {x} {y} {w} {h}\n"
+    # elif Annotation_tag == 'stopLeft':
+    #     ID = 3
+    #     data += f"{ID} {x} {y} {w} {h}\n"
+    # elif Annotation_tag == 'warningLeft':
+    #     ID = 4
+    #     data += f"{ID} {x} {y} {w} {h}\n"
+    # elif Annotation_tag == 'goLeft':
+    #     ID = 5
+    #     data += f"{ID} {x} {y} {w} {h}\n"
     # elif Annotation_tag == 'goForward':
     #     ID = 0
     #     data += f"{ID} {x} {y} {w} {h}\n"
-    else:
-        data += ""
+    # else:
+    #     data += ""
 
     fw.write(data)
     fw.close()
