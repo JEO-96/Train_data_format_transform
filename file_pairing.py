@@ -11,4 +11,5 @@ def pairing(img_dir_name, label_img_dir_name):
 
 
 if __name__ == '__main__':
-    pairing(r"D:\yolov5_modify\runs\detect\ClearNoonTown07\images", r"D:\yolov5_modify\runs\detect\ClearNoonTown07")
+    pairing(r"\\DESKTOP-D8HC3HJ\Server\Virtual_Data\CARLA_ClearNoon_3\exp7\images",
+            r"\\DESKTOP-D8HC3HJ\Server\Virtual_Data\CARLA_ClearNoon_3\exp7")
