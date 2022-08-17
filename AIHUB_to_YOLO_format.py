@@ -28,7 +28,7 @@ def train_trans_form(path):
         json_file_name = path + '/' + f_json
         with open(json_file_name, "r") as st_json:
             st_python = json.load(st_json)
-            img_weight, img_height = st_python['image']['imsize']
+            img_width, img_height = st_python['image']['imsize']
             data = ""
             for a in st_python['annotation']:
                 f = f_json.split('.')[0]
@@ -38,9 +38,9 @@ def train_trans_form(path):
                         and (a['light_count'] == '3' or a['light_count'] == '4'):
                     left, top, right, bottom = a['box']
                     print(f_json)
-                    x = (left + right) / 2 / img_weight
+                    x = (left + right) / 2 / img_width
                     y = (top + bottom) / 2 / img_height
-                    w = abs((right - left) / img_weight)
+                    w = abs((right - left) / img_width)
                     h = abs((bottom - top) / img_height)
                     if len(a['attribute']) > 1:
                         input('ERROR:attribute len > 2')

@@ -19,6 +19,11 @@ def add_word(path, s):
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD:rename.py
+    add_word(r'\\DESKTOP-D8HC3HJ\Server\Virtual_Data\CARLA_ClearNoon_2\ClearNoonTown10\images', "10B")
+    # add_word(r'\\DESKTOP-D8HC3HJ\Server\Virtual_Data\CARLA_ClearNoon_2\ClearNoonTown10\labels', "10")
+=======
     add_word(r'\\DESKTOP-D8HC3HJ\Server\Virtual_Data\CARLA_ClearNoon_3\ClearNoonTown01\images', "01C")
     add_word(r'\\DESKTOP-D8HC3HJ\Server\Virtual_Data\CARLA_ClearNoon_3\ClearNoonTown01\labels', "01C")
+>>>>>>> b04539fd67a8c97c261df0528c1e471c010fd26b:rename_in_dir.py
     # rollback_word(r'\\DESKTOP-D8HC3HJ\Server\Virtual_Data\CARLA_ClearNoon_2\ClearNoonTown01\images')
