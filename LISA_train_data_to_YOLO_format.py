@@ -101,22 +101,22 @@ def TransForm(labels):
 
 if __name__ == '__main__':
     # DayTrainData
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip1/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip2/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip3/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip4/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip5/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip6/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip7/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip8/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip9/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip10/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip11/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip12/frameAnnotationsBOX.csv')
-    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip13/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip1/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip2/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip3/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip4/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip5/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip6/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip7/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip8/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip9/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip10/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip11/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip12/frameAnnotationsBOX.csv')
+    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/dayTrain/dayClip13/frameAnnotationsBOX.csv')
 
     # DayValData
-    # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/daySequence1/frameAnnotationsBOX.csv')
+    TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/daySequence1/frameAnnotationsBOX.csv')
     # TransForm('C:/Users/user/Desktop/archive/Annotations/Annotations/daySequence2/frameAnnotationsBOX.csv')
 
     # NightTrainData
