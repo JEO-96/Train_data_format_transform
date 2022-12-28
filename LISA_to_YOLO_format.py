@@ -14,8 +14,8 @@ def check_directory():
 
 
 def GetFilePath(path):
-    lablepath = r"{}".format(path)
-    return lablepath
+    label_path = r"{}".format(path)
+    return label_path
 
 
 def MakeEmptyFile(emptyFileName):
