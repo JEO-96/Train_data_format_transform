@@ -1,3 +1,6 @@
+"""
+YOLO format으로 구성된 txt 파일을 읽어 이미지에 객체에 대하여 직사각형을 그린 이미지를 생성하는 프로그램
+"""
 import os
 import cv2
 
@@ -11,7 +14,7 @@ def paint_rectangle(img_path, txt_path):
         txt = open(os.path.join(txt_path, txt_file_list[i]), 'r')
         height, width, channel = img.shape
         for line in txt.readlines():
-            _, x, y, w, h = map(float, line.split())
+            _, x, y, w, h = map(float, line.split())    # float으로 형변환
             left = int((x - (w / 2)) * width)
             right = int((x + (w / 2)) * width)
             top = int((y - (h / 2)) * height)

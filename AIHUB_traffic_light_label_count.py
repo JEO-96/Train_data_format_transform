@@ -1,10 +1,13 @@
+"""
+AIHUB의 교통신호/표지판 json 파일을 읽어서 클래스 별로 파일 개수가 몇개 인지 확인
+"""
 import os
 import json
 import collections
 import re
 import shutil
 
-# AIHUB의 교통신호/표지판 json 파일을 읽어서 클래스 파일 개수가 몇개인지 세는 프로그램
+
 count = collections.defaultdict(int)
 
 

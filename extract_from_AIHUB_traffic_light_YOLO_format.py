@@ -1,10 +1,13 @@
+"""
+AIHUB의 "신호등/도로표지판 인지영상(수도권) 데이터셋의 원본파일에서 랜덤으로 10분의 1만 복사하는 프로그램
+"""
 import os
 import pandas as pd
 import random
 import shutil
 from collections import defaultdict
 
-# 원본파일에서 랜덤으로 10분의 1만 복사하는 프로그램
+
 
 def search(dirname):
     images = os.path.join(dirname, "images")

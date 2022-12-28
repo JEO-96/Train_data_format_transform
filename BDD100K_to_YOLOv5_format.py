@@ -1,3 +1,7 @@
+"""
+BDD100K를 YOLO에서 사용하는 포맷으로 변환
+"""
+
 import json
 import os
 import cv2

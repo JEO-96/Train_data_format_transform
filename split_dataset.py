@@ -1,3 +1,6 @@
+"""
+데이터셋을 랜덤으로 순서를 섞은후 파일을 나누는 기능
+"""
 import os
 import shutil
 import random

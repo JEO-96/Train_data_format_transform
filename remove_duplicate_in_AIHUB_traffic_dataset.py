@@ -1,7 +1,9 @@
+"""
+AIHUB 교통신호/표지판 데이터셋에서 중복되는 레이블 제거
+"""
 import json
 import os
 
-# AIHUB 교통신호/표지판 데이터셋에서 중복되는 레이블 제거
 
 def remove_duplicate(path):
     file_list = os.listdir(path)

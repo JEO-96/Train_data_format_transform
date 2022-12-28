@@ -1,9 +1,9 @@
+"""
+신호등과 표지판 파일에서 신호등 파일만 걸러낸것
+"""
 import json
 import shutil
 import os
-
-
-# 신호등과 표지판 파일에서 신호등 파일만 걸러낸것
 
 
 def check_directory():

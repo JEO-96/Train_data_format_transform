@@ -1,12 +1,11 @@
+"""
+defaultdict을 사용하여 클래스의 개수를 세는 프로그램
+"""
 import os
 import json
 import collections
 import re
 import shutil
-
-"""
-defaultdict을 사용하여 클래스의 개수를 세는 프로그램
-"""
 
 count = collections.defaultdict(int)
 

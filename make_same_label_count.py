@@ -1,3 +1,6 @@
+"""
+데이터 개수가 가장 작은 4구 노란불 신호등의 갯수 만큼 다른 신호등을 추출하는 프로그램
+"""
 import os
 import shutil
 import random

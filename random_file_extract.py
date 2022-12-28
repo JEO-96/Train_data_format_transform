@@ -1,12 +1,11 @@
+"""
+랜덤으로 이미지 파일과 레이블 파일의 10분의 1만 추출한 프로그램
+"""
 import os
 import pandas as pd
 import random
 import shutil
 from collections import defaultdict
-
-"""
-랜덤으로 이미지 파일과 레이블 파일의 10분의 1만 추출한 프로그램
-"""
 
 
 def search(dirname):
@@ -41,6 +40,7 @@ def extract(img_list, label_list):
             shutil.copy2(img_list[i], os.path.join(img_list[i].split("\\")[-2], img_list[i].split("\\")[-1]))
             shutil.copy2(label_list[i], os.path.join(label_list[i].split("\\")[-2], label_list[i].split("\\")[-1]))
             print(img_list[i])
+
 
 def label_count(path):
     count = defaultdict(int)

@@ -1,6 +1,10 @@
+"""
+YOLO format으로 변환한 AIHUB 교통신호/표지판 데이터셋에서 class 별 개수를 세는 프로그램
+"""
+
 import os
 
-# YOLO format으로 변환한 AIHUB 교통신호/표지판 데이터셋에서 class 별 개수를 세는 프로그램
+
 ID0 = 0
 ID1 = 0
 ID2 = 0

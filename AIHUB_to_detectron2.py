@@ -1,3 +1,7 @@
+"""
+AIHUB의 "신호등/도로표지판 인지영상(수도권) 데이터셋의 포맷을 detectron2에서 사용하는 포멧으로 변환
+"""
+
 import json
 import os
 import shutil
